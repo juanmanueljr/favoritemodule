@@ -1,0 +1,25 @@
+favoritelist_block.favorites_page:
+  path: 'user/favorites'
+  defaults:
+    _controller: '\Drupal\favoritelist_block\Controller\FavoritesPage::PageController'
+    _title: 'My Favorites Series'
+  requirements:
+    _permission: 'access favorite page'
+  options: 
+    no_cache: true  
+
+# favoritelist_block.form:
+#   path: 'favorites/favoriteslistform'
+#   defaults:
+#     _form: '\Drupal\favoritelist_block\Form\PlaylistForm'
+#     _title: 'Form of Favorites'
+#   requirements:
+#     _permission: 'access favourite page'
+
+favoritelist_block.remove_form:
+  path: 'user/favorites/{nid}/remove'
+  defaults:
+    _form: '\Drupal\favoritelist_block\form\RemoveForm'
+    _title: 'RemoveForm'
+  requirements:
+    _permission: 'access favorite page'

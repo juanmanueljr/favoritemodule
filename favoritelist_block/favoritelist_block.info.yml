@@ -1,0 +1,5 @@
+name: Favorite list for users
+type: module
+description: A module to add favorites series for authenticated users
+package: custom
+core: 8.x
